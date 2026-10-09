@@ -32,9 +32,6 @@ jobs:
         with:
           gradle-version: '8.7'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Install Android SDK packages
         run: |
           yes | sdkmanager --licenses >/dev/null || true
@@ -55,4 +52,3 @@ jobs:
           name: BaLi-Travel-APK
           path: android-project/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
-          
