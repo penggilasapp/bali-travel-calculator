@@ -52,3 +52,4 @@ jobs:
           name: BaLi-Travel-APK
           path: android-project/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+          
